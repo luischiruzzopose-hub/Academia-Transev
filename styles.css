@@ -614,7 +614,15 @@ h1,h2,h3{
   display:flex; align-items:center; justify-content:center;
 }
 .material-icon{ width:52px; height:52px; }
-.material-inner .btn-primary{ margin-top:18px; }
+.material-inner .btn-primary{ margin-top:18px; margin-right:14px; }
+.btn-ghost-light{
+  display:inline-flex;
+  margin-top:18px;
+  border:1.5px solid var(--navy);
+  color:var(--navy);
+  background:transparent;
+}
+.btn-ghost-light:hover{ background:var(--navy); color:var(--white); }
 
 /* =========================================================
    FAQ — Accordion
