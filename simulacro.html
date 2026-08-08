@@ -369,7 +369,7 @@ const preguntasFijas = [
     id: 1, tipo: "fija", categoria: "Velocidad",
     pregunta: "La velocidad adecuada de circulación de un vehículo en caso de aglomeración de personas es:",
     imagen: "",
-    opciones: ["15 km/h", "Paso de peatón", "25 km/h", "Ninguna de las anteriores"],
+    opciones: ["15 km/h", "10 km/h", "25 km/h", "Ninguna de las anteriores"],
     correcta: 0,
     explicacion: "En zonas con aglomeración de personas la velocidad máxima permitida se reduce a 15 km/h para evitar accidentes."
   },
@@ -402,13 +402,13 @@ const preguntasFijas = [
     pregunta: "Cruce peatonal es:",
     imagen: "",
     opciones: [
-      "Parte de la calle habilitada para ser atravesada por peatones",
-      "La senda de seguridad formada por la prolongación (imaginaria o demarcada) del eje de calzada",
+      "La senda de seguridad formada por la prolongación (imaginaria o demarcada) del eje de la vereda",
+      "Parte de la calle habilitada exclusivamente para vehículos",
       "Parte de la vereda donde se debe esperar hasta poder cruzar",
       "Los llamados \"lomos de burro\""
     ],
-    correcta: 1,
-    explicacion: "El cruce peatonal se define como la senda de seguridad formada por la prolongación, imaginaria o demarcada, del eje de la vereda o calzada."
+    correcta: 0,
+    explicacion: "El cruce peatonal se define como la senda de seguridad formada por la prolongación, imaginaria o demarcada, del eje de la vereda."
   },
   {
     id: 6, tipo: "fija", categoria: "Luces",
@@ -488,12 +488,12 @@ const preguntasFijas = [
     explicacion: "Antes de adelantar corresponde verificar por el espejo retrovisor que la maniobra es segura y anunciarla con el señalero."
   },
   {
-    id: 15, tipo: "fija", categoria: "Seguridad",
-    pregunta: "Si tiene que retroceder y por una pendiente su vehículo se va solo hacia atrás, no es necesario poner la reversa:",
+    id: 15, tipo: "fija", categoria: "Alcohol",
+    pregunta: "Las bebidas alcohólicas tomadas junto con algunos antialérgicos disminuyen la capacidad de conducir:",
     imagen: "",
     opciones: ["Verdadero", "Falso"],
-    correcta: 1,
-    explicacion: "Siempre que el vehículo se desplace hacia atrás debe utilizarse la marcha atrás, independientemente de la pendiente."
+    correcta: 0,
+    explicacion: "La combinación de alcohol con antialérgicos (u otros medicamentos) potencia sus efectos depresores y reduce la capacidad de reacción al conducir."
   },
   {
     id: 16, tipo: "fija", categoria: "Estacionamiento",
@@ -556,8 +556,8 @@ const preguntasFijas = [
     pregunta: "En caso de incendio o inmersión, el cinturón de seguridad disminuye el riesgo de muerte:",
     imagen: "",
     opciones: ["Verdadero", "Falso"],
-    correcta: 1,
-    explicacion: "En situaciones de incendio o inmersión el cinturón puede dificultar una salida rápida del vehículo si no se libera a tiempo."
+    correcta: 0,
+    explicacion: "El cinturón de seguridad mantiene al ocupante consciente y en su posición tras el impacto, lo que en la mayoría de los casos disminuye el riesgo de muerte incluso en incendio o inmersión, al permitir reaccionar y salir del vehículo."
   },
   {
     id: 24, tipo: "fija", categoria: "Seguridad",
@@ -709,12 +709,12 @@ const preguntasAleatorias = [
     explicacion: "Ante un camino resbaladizo corresponde reducir la velocidad y aumentar la distancia de frenado prevista."
   },
   {
-    id: 109, tipo: "aleatoria", categoria: "Señales informativas",
-    pregunta: "¿Qué indica esta señal rectangular verde con una cruz blanca?",
-    imagen: "assets/images/simulacro/hospital.svg",
-    opciones: ["Proximidad de un hospital o centro de salud", "Zona de estacionamiento gratuito", "Prohibido el paso de ambulancias", "Fin de la ruta nacional"],
-    correcta: 0,
-    explicacion: "Las señales informativas de servicios indican, entre otros, la proximidad de hospitales o centros de salud."
+    id: 109, tipo: "aleatoria", categoria: "Seguridad",
+    pregunta: "¿Cuál es la edad mínima para poder viajar en el asiento delantero de un vehículo?",
+    imagen: "",
+    opciones: ["1 año", "6 años", "12 años", "Ninguna de las anteriores"],
+    correcta: 2,
+    explicacion: "Los menores de 12 años deben viajar en el asiento trasero; recién a partir de esa edad pueden hacerlo en el asiento delantero."
   },
   {
     id: 110, tipo: "aleatoria", categoria: "Señales informativas",
